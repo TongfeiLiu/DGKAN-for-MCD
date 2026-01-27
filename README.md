@@ -24,10 +24,10 @@ We are very grateful for the outstanding contributions of the publicly available
 
 ## 📮 Contact
 
-For questions or suggestions, please open an issue or contact:
+If you have any problems (or cooperation) when running the code, please do not hesitate to contact us by:
 
-- Jianjian Xu: xujianjian.Leo@sust.edu.cn  
-- Tongfei Liu: liutongfei_home@hotmail.com  
+- Jianjian Xu: xujianjian.Leo@sust.edu.cn
+- Tongfei Liu: liutongfei_home@hotmail.com
 
 ---
 
