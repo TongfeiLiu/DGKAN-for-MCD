@@ -9,9 +9,9 @@ DGKAN: Dual-branch Graph Kolmogorov-Arnold Network for Unsupervised Multimodal C
 The framework of the proposed CFRL is presented as follows:
 ![Framework of our proposed DGKAN)](https://github.com/TongfeiLiu/DGKAN-for-MCD/blob/main/Figures/Freamwork.png)
 
-## 🙏Acknowledgement
 
-We are also very grateful for the outstanding contributions of the publicly available MCD datasets [1,2,3] or [4].
+## ❤️Acknowledgement
+We are very grateful for the outstanding contributions of the publicly available MCD datasets and codes [1,2,3] and [4].
 
 ```
 [1] https://sites.google.com/view/luppino/data.
@@ -19,3 +19,16 @@ We are also very grateful for the outstanding contributions of the publicly avai
 [3] Professor Max Mignotte's webpage (http://www-labs.iro.umontreal.ca/~mignotte/).
 [4] https://github.com/yulisun.
 ```
+
+---
+
+## 📮 Contact
+
+For questions or suggestions, please open an issue or contact:
+
+- Jianjian Xu: xujianjian.Leo@sust.edu.cn  
+- Tongfei Liu: liutongfei_home@hotmail.com  
+
+---
+
+
