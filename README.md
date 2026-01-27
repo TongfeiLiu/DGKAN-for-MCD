@@ -6,7 +6,7 @@
 This repository provides the official implementation of the paper:
 DGKAN: Dual-branch Graph Kolmogorov-Arnold Network for Unsupervised Multimodal Change Detection
 
-The framework of the proposed CFRL is presented as follows:
+The framework of the proposed DGKAN is presented as follows:
 ![Framework of our proposed DGKAN)](https://github.com/TongfeiLiu/DGKAN-for-MCD/blob/main/Figures/Freamwork.png)
 
 
