@@ -11,36 +11,7 @@ import torchvision.transforms as transforms
 device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
 
 
-def measure_flops_and_runtime_real_data(encoder, graph, device='cuda'):
-    """基于实际数据计算 FLOPs / Params / 总推理时间"""
-    encoder.to(device)
-    encoder.eval()
 
-    # 统计模型参数量
-    total_params = sum(p.numel() for p in encoder.parameters())
-
-    total_flops = 0
-    torch.cuda.synchronize()
-    start_time = time.time()
-
-    with torch.no_grad():
-        for i in range(graph['obj_nums']):
-            node = graph['all_Superpixel_node_t1'][i].to(device)
-            f_adj = graph['feature_graphs_t1'][i].to(device)
-            s_adj = graph['structure_graphs_t1'][i].to(device).type(torch.float32)
-
-            # 累加 FLOPs（只统计前向传播）
-            flops, _ = profile(encoder, inputs=(node, f_adj, s_adj), verbose=False)
-            total_flops += flops
-
-            # 前向推理
-            _ = encoder(node, f_adj, s_adj)
-
-    torch.cuda.synchronize()
-    total_time = time.time() - start_time  # 整个图像的总推理时间
-
-    total_flops, total_params = clever_format([total_flops, total_params], "%.3f")
-    return total_flops, total_params, total_time
 
 
 
@@ -263,8 +234,6 @@ def main(data_name,epoch):
 
                     # 初始化模型
                     model = initialize_model(image_t1)
-
-
                     # 在该轮训练中进行 epoch 次训练
                     for i in range(epoch):
                         train(i, graph=graph, model=model, save_path=save_path)
@@ -294,17 +263,6 @@ def main(data_name,epoch):
 
                     # 初始化模型
                     model = initialize_model(image_t1)
-                    # ====== 新增：测 FLOPs / Params / 推理时间（基于实际超像素数据） ======
-                    encoder = model['encoder']
-                    flops, params, avg_time = measure_flops_and_runtime_real_data(encoder, graph, device)
-
-                    # 保存结果
-                    with open(os.path.join(save_path, "flops_runtime.txt"), "w") as f:
-                        f.write(f"FLOPs: {flops}\n")
-                        f.write(f"Params: {params}\n")
-                        f.write(f"Avg Inference Time per superpixel (s): {avg_time:.6f}\n")
-
-                    print(f"[INFO] FLOPs={flops}, Params={params}, Avg Time per superpixel={avg_time:.6f}s")
 
                     # 在该轮训练中进行 epoch 次训练
                     for i in range(epoch):
@@ -336,17 +294,6 @@ def main(data_name,epoch):
 
                     # 初始化模型
                     model = initialize_model(image_t1)
-                    # ====== 新增：测 FLOPs / Params / 推理时间（基于实际超像素数据） ======
-                    encoder = model['encoder']
-                    flops, params, avg_time = measure_flops_and_runtime_real_data(encoder, graph, device)
-
-                    # 保存结果
-                    with open(os.path.join(save_path, "flops_runtime.txt"), "w") as f:
-                        f.write(f"FLOPs: {flops}\n")
-                        f.write(f"Params: {params}\n")
-                        f.write(f"Avg Inference Time per superpixel (s): {avg_time:.6f}\n")
-
-                    print(f"[INFO] FLOPs={flops}, Params={params}, Avg Time per superpixel={avg_time:.6f}s")
 
                     # 在该轮训练中进行 epoch 次训练
                     for i in range(epoch):
@@ -378,17 +325,6 @@ def main(data_name,epoch):
 
                     # 初始化模型
                     model = initialize_model(image_t1)
-                    # ====== 新增：测 FLOPs / Params / 推理时间（基于实际超像素数据） ======
-                    encoder = model['encoder']
-                    flops, params, avg_time = measure_flops_and_runtime_real_data(encoder, graph, device)
-
-                    # 保存结果
-                    with open(os.path.join(save_path, "flops_runtime.txt"), "w") as f:
-                        f.write(f"FLOPs: {flops}\n")
-                        f.write(f"Params: {params}\n")
-                        f.write(f"Avg Inference Time per superpixel (s): {avg_time:.6f}\n")
-
-                    print(f"[INFO] FLOPs={flops}, Params={params}, Avg Time per superpixel={avg_time:.6f}s")
 
                     # 在该轮训练中进行 epoch 次训练
                     for i in range(epoch):
@@ -419,17 +355,6 @@ def main(data_name,epoch):
 
                     # 初始化模型
                     model = initialize_model(image_t1)
-                    # ====== 新增：测 FLOPs / Params / 推理时间（基于实际超像素数据） ======
-                    encoder = model['encoder']
-                    flops, params, avg_time = measure_flops_and_runtime_real_data(encoder, graph, device)
-
-                    # 保存结果
-                    with open(os.path.join(save_path, "flops_runtime.txt"), "w") as f:
-                        f.write(f"FLOPs: {flops}\n")
-                        f.write(f"Params: {params}\n")
-                        f.write(f"Avg Inference Time per superpixel (s): {avg_time:.6f}\n")
-
-                    print(f"[INFO] FLOPs={flops}, Params={params}, Avg Time per superpixel={avg_time:.6f}s")
 
                     # 在该轮训练中进行 epoch 次训练
                     for i in range(epoch):
@@ -491,9 +416,7 @@ def main(data_name,epoch):
 
                     # 初始化模型
                     model = initialize_model(image_t1)
-                    # ====== 新增：测 FLOPs / Params / 推理时间（基于实际超像素数据） ======
                     encoder = model['encoder']
-                    flops, params, avg_time = measure_flops_and_runtime_real_data(encoder, graph, device)
 
                     # 保存结果
                     with open(os.path.join(save_path, "flops_runtime.txt"), "w") as f:
