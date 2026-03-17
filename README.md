@@ -14,8 +14,10 @@ The framework of the proposed DGKAN is presented as follows:
 We are very grateful for the outstanding contributions of the publicly available MCD datasets and codes [1,2,3] and [4].
 
 ```
-[1] Zhou M, Sui H, Chen S, et al. UGRoadUpd: An unchanged-guided historical road database updating framework based on bi-temporal remote sensing images[J]. IEEE Transactions on Intelligent Transportation Systems, 2022, 23(11): 21465-21477.
-[2] Wang W, Xie E, Li X, et al. Pvt v2: Improved baselines with pyramid vision transformer[J]. Computational visual media, 2022, 8(3): 415-424.
+[1] https://sites.google.com/view/luppino/data.
+[2] Professor Michele Volpi's webpage at https://sites.google.com/site/michelevolpiresearch/home.
+[3] Professor Max Mignotte's webpage (http://www-labs.iro.umontreal.ca/~mignotte/).
+[4] https://github.com/yulisun.
 ```
 
 ---
@@ -24,7 +26,7 @@ We are very grateful for the outstanding contributions of the publicly available
 
 If you have any problems (or cooperation) when running the code, please do not hesitate to contact us by:
 
-- Qiong Zhou: zqdemail0226@163.com
+- Jianjian Xu: xujianjian.Leo@sust.edu.cn
 - Tongfei Liu: liutongfei_home@hotmail.com
 
 ---
