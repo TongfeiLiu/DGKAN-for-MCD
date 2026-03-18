@@ -12,6 +12,9 @@ Multimodal change detection (MCD) has important applications in disaster assessm
 The framework of the proposed DGKAN is presented as follows:
 ![Framework of our proposed DGKAN)](https://github.com/TongfeiLiu/DGKAN-for-MCD/blob/main/Figures/Freamwork.png)
 
+## 📊 Results Preview (Accuracy)
+![Accuracy of our proposed DGKAN)](https://github.com/TongfeiLiu/DGKAN-for-MCD/blob/main/Figures/Acc%20Results.png)
+
 ## 📜 Citation
 If you find our work useful for your research, please consider citing our paper:
 
