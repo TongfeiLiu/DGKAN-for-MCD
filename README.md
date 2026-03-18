@@ -3,8 +3,9 @@
 ![Python](https://img.shields.io/badge/Python-3.7%2B-green)
 ![PyTorch](https://img.shields.io/badge/PyTorch-1.8%2B-red)
 
+Tongfei Liu, Jianjian Xu, Tao Lei, Yingbo Wang, Xiaogang Du, Zhiyong Lv. [DGKAN: Dual-branch Graph Kolmogorov-Arnold Network for Unsupervised Multimodal Change Detection](https://ojs.aaai.org/index.php/AAAI/article/view/37665) [C]. **Proceedings of the AAAI Conference on Artificial** , 40(9), 7278-7286, 2026. https://doi.org/10.1609/aaai.v40i9.37665
+
 This repository provides the official implementation of the paper:
-DGKAN: Dual-branch Graph Kolmogorov-Arnold Network for Unsupervised Multimodal Change Detection
 
 The framework of the proposed DGKAN is presented as follows:
 ![Framework of our proposed DGKAN)](https://github.com/TongfeiLiu/DGKAN-for-MCD/blob/main/Figures/Freamwork.png)
