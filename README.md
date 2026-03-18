@@ -35,8 +35,7 @@ If you find our work useful for your research, please consider citing our paper:
   volume={34},
   number={},
   pages={1219-1233},
-  keywords={Feature extraction;Image reconstruction;Training;Data mining;Autoencoders;Representation learning;Image sensors;Electronic mail;Decoding;Clustering algorithms;Multimodal change detection;unsupervised change detection;heterogeneous images;representation learning;commonality feature},
-  doi={10.1109/TIP.2025.3539461}}
+  doi={10.1109/TIP.2025.3539461}
 }
 ```
 
