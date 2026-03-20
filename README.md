@@ -43,13 +43,15 @@ If you find our work useful for your research, please consider citing our paper:
 ```
 
 ## ❤️Acknowledgement
-We are very grateful for the outstanding contributions of the publicly available MCD datasets and codes [1,2,3] and [4].
+This code is borrowed from the depository[1,2]. We are very grateful for the outstanding contributions of the publicly available MCD datasets and codes [3,4,5] and [6].
 
 ```
-[1] https://sites.google.com/view/luppino/data.
-[2] Professor Michele Volpi's webpage at https://sites.google.com/site/michelevolpiresearch/home.
-[3] Professor Max Mignotte's webpage (http://www-labs.iro.umontreal.ca/~mignotte/).
-[4] https://github.com/yulisun.
+[1] https://github.com/Blealtan/efficient-kan/blob/master/src/efficient_kan/kan.py.
+[2] https://github.com/KindXiaoming/pykan.
+[3] https://sites.google.com/view/luppino/data.
+[4] Professor Michele Volpi's webpage at https://sites.google.com/site/michelevolpiresearch/home.
+[5] Professor Max Mignotte's webpage (http://www-labs.iro.umontreal.ca/~mignotte/).
+[6] https://github.com/yulisun.
 ```
 
 ---
