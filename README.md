@@ -62,6 +62,7 @@ If you have any problems (or cooperation) when running the code, please do not h
 
 - Jianjian Xu: xujianjian.Leo@sust.edu.cn
 - Tongfei Liu: liutongfei_home@hotmail.com
+**Note**: Please also copy to the two email addresses above.
 
 ---
 
