@@ -60,7 +60,7 @@ This code is borrowed from the depository[1,2]. We are very grateful for the out
 
 If you have any problems (or cooperation) when running the code, please do not hesitate to contact us by:
 
-- Jianjian Xu: xujianjian.Leo@sust.edu.cn
+- Jianjian Xu: xujianjian_Leo@sust.edu.cn
 - Tongfei Liu: liutongfei_home@hotmail.com
 
 **Note**: Please also copy to the two email addresses above.
